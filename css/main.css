@@ -1,0 +1,710 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 1000;
+  padding: 40px 30px;
+}
+
+header.sticky {
+  padding: 10px 30px;
+  background: #fff;
+  opacity: 0.9;
+}
+
+header.sticky .logo {
+  color: #111;
+}
+
+header.sticky .navigation li a {
+  color: #111;
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #fff;
+}
+
+header .logo span {
+  font-weight: bold;
+  font-size: 1em;
+  color: #ff0157;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+header .navigation li {
+  list-style: none;
+  padding-left: 10px;
+}
+
+header .navigation li a {
+  color: #fff;
+  font-weight: 300;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+header .navigation li a:hover {
+  opacity: 1;
+  font-weight: 500px;
+  color: #ff0157;
+}
+
+.banner {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background: url("../assets/images/bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner .content {
+  max-width: 900px;
+  text-align: center;
+}
+
+.banner .content h2 {
+  font-size: 5em;
+  color: #fff;
+}
+
+.banner .content p {
+  font-size: 1em;
+  color: #fff;
+  margin-bottom: 1em;
+}
+
+.banner .content a {
+  padding: 10px 20px;
+  background: #ff0157;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  border-radius: 2px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  display: inline-block;
+}
+
+.banner .content a:hover {
+  letter-spacing: 5px;
+}
+
+.about .row {
+  width: 100%;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.about .row .col50 {
+  width: 48%;
+  padding: 5px;
+}
+
+.about .row .col50 .content h2 {
+  font-size: 2.3em;
+  font-weight: 700;
+  color: #ff0157;
+}
+
+.about .row .col50 .content h2 span {
+  font-size: 0.7em;
+  color: #111;
+  font-weight: 400;
+}
+
+.about .row .col50 .content p {
+  text-align: justify;
+  font-size: 0.9em;
+}
+
+.about .row .col50 .imgBx {
+  width: 100%;
+  min-height: 300px;
+  position: relative;
+}
+
+.about .row .col50 .imgBx img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  right: 0;
+}
+
+section.menu .menuHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.menu .menuHeader h2 {
+  font-size: 1.4em;
+  color: #111;
+  font-weight: 400;
+}
+
+section.menu .menuHeader h2 span {
+  font-size: 1.72em;
+  font-weight: 700;
+  color: #ff0157;
+}
+
+section.menu .menuHeader p {
+  font-size: 0.8em;
+}
+
+section.menu .menuItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.menu .menuItems .card {
+  margin: 6px 6px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.4);
+  border: 15px solid #fff;
+  -webkit-box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.06);
+}
+
+section.menu .menuItems .card .imgBx {
+  max-width: 260px;
+  height: 260px;
+  padding: 5px;
+}
+
+section.menu .menuItems .card .imgBx img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1px;
+}
+
+section.menu .menuItems .card .title {
+  margin-top: 4px;
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+section.menu .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.menu .btn a {
+  padding: 10px 20px;
+  background: #ff0157;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  border-radius: 2px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  display: inline-block;
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #ff0157), color-stop(50%, #d1074e)) right;
+  background: linear-gradient(to left, #ff0157 50%, #d1074e 50%) right;
+  background-size: 200%;
+}
+
+section.menu .btn a:hover {
+  letter-spacing: 5px;
+  background-position: left;
+}
+
+section.expert {
+  margin-top: 20px;
+}
+
+section.expert .expertHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.expert .expertHeader h2 {
+  font-size: 1.4em;
+  color: #111;
+  font-weight: 400;
+}
+
+section.expert .expertHeader h2 span {
+  font-size: 1.72em;
+  font-weight: 700;
+  color: #ff0157;
+}
+
+section.expert .expertHeader p {
+  font-size: 0.8em;
+}
+
+section.expert .expertItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.expert .expertItems .card {
+  margin: 6px 6px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.4);
+  border: 15px solid #fff;
+  -webkit-box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.06);
+}
+
+section.expert .expertItems .card .imgBx {
+  max-width: 160px;
+  height: 160px;
+  padding: 5px;
+}
+
+section.expert .expertItems .card .imgBx img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1px;
+}
+
+section.expert .expertItems .card .title {
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+section.testimonials {
+  background: url("../assets/images/bg2.jpg");
+  background-size: cover;
+}
+
+section.testimonials .testimonialsHeader {
+  padding-top: 20px;
+  margin: 30px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.testimonials .testimonialsHeader h2 {
+  font-size: 1.4em;
+  color: #fff;
+  font-weight: 400;
+}
+
+section.testimonials .testimonialsHeader h2 span {
+  font-size: 1.72em;
+  font-weight: 700;
+  color: #ff0157;
+}
+
+section.testimonials .testimonialsHeader p {
+  font-size: 0.8em;
+  color: #fff;
+}
+
+section.testimonials .testimonialItems {
+  padding: 0px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.testimonials .testimonialItems .card {
+  background: #fff;
+  border: 15px solid #fff;
+  -webkit-box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.6);
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+}
+
+section.testimonials .testimonialItems .card .imgBx {
+  width: 60px;
+  height: 60px;
+  position: relative;
+}
+
+section.testimonials .testimonialItems .card .imgBx img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+section.testimonials .testimonialItems .card .comment {
+  padding-top: 10px;
+  font-size: 0.9em;
+  color: gray;
+  font-weight: 300;
+}
+
+section.testimonials .testimonialItems .card .commentFullName {
+  font-size: 1em;
+  font-weight: 400;
+  color: #ff0157;
+}
+
+section.contact {
+  background: url("../assets/images/bg3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  padding: 30px;
+}
+
+section.contact .contactHeader {
+  padding-top: 20px;
+  margin: 30px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.contact .contactHeader h2 {
+  font-size: 1.4em;
+  color: #111;
+  font-weight: 400;
+}
+
+section.contact .contactHeader h2 span {
+  font-size: 1.72em;
+  font-weight: 700;
+  color: #ff0157;
+}
+
+section.contact .contactHeader p {
+  font-size: 0.8em;
+  color: #111;
+}
+
+section.contact .contactForm {
+  width: 380px;
+  border: 15px solid #fff;
+  -webkit-box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.5);
+}
+
+section.contact .contactForm h3 {
+  font-weight: 400;
+}
+
+section.contact .contactForm .inputBox {
+  margin: 10px 0px;
+}
+
+section.contact .contactForm .inputBox input[type="text"], section.contact .contactForm .inputBox input[type="email"], section.contact .contactForm .inputBox textarea {
+  padding: 0.2em 3px;
+  width: 100%;
+  border: 1px solid #555;
+}
+
+section.contact .contactForm .inputBox textarea {
+  resize: none;
+}
+
+section.contact .contactForm .inputBox input[type="submit"] {
+  padding: 0.6em 1em;
+  background: #ff0157;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.menuToggle {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  header, header.sticky {
+    padding: 10px 20px;
+  }
+  header .navigation {
+    display: none;
+  }
+  .menuToggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 66px;
+  }
+  .menuToggle {
+    position: relative;
+    background: url("..../assets/images/menu.png");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  .menuToggle.active {
+    position: relative;
+    background: url("..../assets/images/close.png");
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+  }
+  header.sticky .menuToggle, header.sticky .menuToggle.active {
+    -webkit-filter: invert(1);
+            filter: invert(1);
+  }
+  .navigation.active {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - (68px));
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #111;
+  }
+  .navigation.active li {
+    padding: 20px 0px;
+  }
+  .navigation.active li a {
+    font-size: 1.6em;
+  }
+  header.sticky {
+    position: fixed;
+  }
+  header.sticky .navigation li a {
+    color: #fff;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    font-weight: 400;
+  }
+  header.sticky .navigation li a:hover {
+    opacity: 1;
+    font-weight: 500px;
+    color: #ff0157;
+  }
+  section.banner .content h2 {
+    font-size: 2.6em;
+  }
+  section.banner .content p {
+    font-size: 0.9em;
+  }
+  section.about .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.about .row .col50 {
+    width: 100%;
+  }
+  section.menu .menuItems .card .imgBx {
+    max-width: 200px;
+    height: 200px;
+    padding: 0px;
+  }
+  section.expert .expertHeader p {
+    text-align: center;
+  }
+  section.testimonials .testimonialsHeader p {
+    text-align: center;
+  }
+  section.contact .contactForm {
+    width: 300px;
+  }
+}
+
+@media (max-width: 700px) {
+  section.testimonials .testimonialItems .card {
+    width: 100%;
+  }
+  section.testimonials .testimonialItems {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 481px) {
+  section.banner .content h2 {
+    font-size: 1.6em;
+  }
+  section.banner .content p {
+    font-size: 0.8em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
