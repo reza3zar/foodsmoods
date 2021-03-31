@@ -473,7 +473,20 @@ section.contact{
 
 .menuToggle{
     display: none;
+
+ 
 }
+
+.ham-menu{
+    display: none;
+}
+
+.ham-menu.active {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
 
 @media (max-width:991px){
 
@@ -488,7 +501,8 @@ section.contact{
     }
     .menuToggle{
         display: flex;
-        padding-right: 66px;
+        // padding-right: 66px;
+        padding: 0;
 
     }
     .menuToggle{
@@ -512,6 +526,8 @@ section.contact{
         cursor: pointer;
         width: 40px;
         height: 40px;
+
+     
     }
 
     header.sticky .menuToggle,header.sticky .menuToggle.active{
