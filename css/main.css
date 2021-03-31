@@ -387,7 +387,7 @@ section.expert .expertItems .card .title {
 }
 
 section.testimonials {
-  background: url("../assets/images/bg2.jpg");
+  background: url("..../assets/images/bg2.jpg");
   background-size: cover;
 }
 
@@ -495,7 +495,8 @@ section.testimonials .testimonialItems .card .commentFullName {
 
 section.contact {
   background: url("../assets/images/bg3.jpg");
-  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   background-repeat: no-repeat;
   margin-bottom: 20px;
   padding: 30px;
@@ -588,7 +589,7 @@ section.contact .contactForm .inputBox input[type="submit"] {
   }
   .menuToggle {
     position: relative;
-    background: url("..../assets/images/menu.png");
+    background: url("....../assets/images/menu.png");
     background-repeat: no-repeat;
     background-size: 30px;
     background-position: center;
@@ -600,7 +601,7 @@ section.contact .contactForm .inputBox input[type="submit"] {
   }
   .menuToggle.active {
     position: relative;
-    background: url("..../assets/images/close.png");
+    background: url("....../assets/images/close.png");
     background-repeat: no-repeat;
     background-size: 25px;
     background-position: center;
